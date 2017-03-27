@@ -3,43 +3,90 @@
 <html>
 	<head>
 	<meta charset="utf-8" />
-		<title> Page test </title>
+		<title> Premier site et cours de HTML </title>
 	</head>
 	<body>
-		<h1> ECHOS </h1>
-		<ol> 
-			<li> aléatoire</li>
-			<li> ordonnée </li>
-			<li> désordonnée </li>
-		</ol>
-		<marquee direction="right">BOnjour</marquee>
-		<marquee direction="up">Boom Boom Boom</marquee>
-		<dl>
-			<dt><p> Le <strong>puit</strong> semble profond </dt>
-			<dt><mark>L'eau n'est pas visible</mark></dt>
-			<dd><em>Je crois que ça va faire mal</em> </dd></p>
-		</dl>
-			<p>Ca y est j'ai touché le fond</p>
-		<pre> <code>
-		<frekfkjdsf<
-		</code> </pre>
-		<h2> ECHOS </h2>
-			<p>ahhhhhhhhhhhh</p>
-			<p>ahhhhhhhhhhhhahhhhhhhhhhhh</p>
-			<p>ahhhhhhhhhh</p>
+		<marquee direction="right"><strong>BONJOUR</strong></marquee>
+		<h1> Présentation de HTML et début de la structuration</h1>
 		
-		<h3> ECHOS </h3>
-			<p>Il fait beau, c'est le printemps
-			les oiseaux chantent!!!!!</p>
+		<p>Html ou HyperText Markup Language est un format de données qui permet de créer des sites web. Depuis la version 3, il permet une compatibilité plus 
+		forte avec CSS qui s'occupe de la partie graphique de la création d'une page web. HTML permet donc de structurer les données. Sa création remonte à 1991 grâce à
+		Tim Berners-Lee. Il existe aujourd'hui 5 version. La dernière HTML 5 est celle que nous utiliserons dans cette présentation.</p>
+		<p>Au départ de tout code, la version de html est visible entre chevrons, &lt;!doctype html&gt;. Cela indique que le site est écrit dans la version 5 de html. Sous cette inscription, une balise racine est indiquée sous la forme &lt;html&gt;
+		Après ces indications, nous pouvons commencer à indiquer le titre de notre page web qui servira de référence pour trouver le site internet.
+		Ce titre s'indique comme suit:
+		&lt;head&gt;</p>
+		<p>Pour que votre site puisse comporter les caractères spéciaux, pour nous de la langue française, un léger ajout est nécessaire entre l'indication head
+		et l'indication title. Il s'agit de &lt;meta charset="utf-8" /&gt;. Cet ensemble indique au navigateur le jeu d'encodage dans lequel la page 
+		doit être retranscrite. L'indication utf(Universal Character Set Transformation Format)-8 indique le nombre de bit encodé, dans ce cas 256.
+		L'interaction entre plusieurs codes permet néanmoins de dépasser ce nombre.
+			&lt;title&gt; Indiquez votre titre &lt;/title&gt;
+		Ensuite refermer l'entête.
+		&lt;/head&gt;</p>
 		
-		<h4> ECHOS </h4>
-		<dl>
-			<dt> boommm </dt>
-			<dd> Bruit pendant la chute </dd>
-		</dl>
-		<h5> ECHOS </h5>
+		<p>Cet ensemble head est désigné sous le terme "enfant". Il s'agit donc de l'enfant de la balise racine html. Cette racine possède un enfant,
+		il s'agit de la balise body. Cela se repère dans le code par une indentation par rapport à la balise racine. Comme pour toutes les autres balises, elle possède une ouverture et une fermeture. Ces indications d'ouverture 
+		et de fermeture vous seront expliquer dans la partie suivante.</p>
 		
-		<h6> ECHOS</h6>
+		
+		<ol><h2> 1. Présentation des balises</h2></ol>
+		<p>Les balises sous html se repèrent grâce aux chevrons. Elles sont de deux sortes, soient complètes, soient autofermante.
+		Dans le premier cas des balises d'ouverture, par exemple &lt;balises&gt;, et de fermeture, par exemple &lt;/balises&gt;, sont nécessaires.
+		Dans le second cas, la balise comporte avant le dernier chevron la marque de fermeture, /, par exemple &lt;balise/&gt;.
+		A l'intérieur des balises, plusieurs niveaux d'écriture peuvent exister. Dans ce cas, il faut respecter l'indentation afin de rendre plus 
+		lisible la lecture du fichier.
+		
+		Ils existent deux balises qui sont interdites d'utilisation et qui proviennent d'un héritage des anciennes versions de HTML. Il s'agit
+		des balises &lt;br&gt; et &lt;he&gt;. La première balise interdite sert à ajouter un solide d'un point de vue sémantique. La deuxième balise interdite
+		ajoute une ligne horizontale. </p>
+		
+	
+		<ol><h2> 2. Mise en évidence de certains caractères </h2></ol>
+		
+		<p>Nous allons voir maintenant comment mettre en avant plusieurs caractères en évidence. Pour cela, il existe différentes solutions, soit
+		la mise en <em> italique </em> par l'intermédiaire de &lt;em&gt; &lt;/em&gt;, soit la mise en <strong> gras </strong> grâce à &lt;strong&gt; &lt;/strong&gt;,
+		soit <mark> en surlignant </mark> avec &lt;mark&gt; &lt;/mark&gt;. </p>
+		<p> Il est possible d'afficher aussi les chevrons qui servant à encadrer les balises grâce à & lt; et & gt;. Pour les nécessités de l'affichage
+		un espace est nécessaire, mais il est inexistant quand on le code.</p>
+		<p>Au même titre que certains caractères, on peut mettre en évidence certains paragraphes par la présence soit de titre avec des formats différents,
+		comme il possible de le voir entre le titre de cette partie, ou de ce sous ensemble, et celui du début. 
+		Au maximum, il est toléré d'avoir 6 sous ensembles. Ces derniers se déclarent au sein du code comme suit : &lt;h1&gt; TITRE de la partie &lt;/h1&gt;.</p>
+		
+		<ol><h2> 3. Présentation des listes</h2></ol>
+		<p> Il existe trois listes dispônibles dans HTML, la liste ordonnée, la liste désordonnée et la liste de définition.</p>
+		<ol><ol> 
+			<li> <strong> La liste ordonnée</strong> </li>
+			<p> Elle permet de lister les informations sous forme titre numéroté. 
+			Pour cela, le code à réaliser est le suivant:
+			<p>&lt;ol&gt; </p>
+				<p>&lt;li&gt; puis refermer vos chevrons &lt;/li&gt; </p>
+			<p>Enfin refermer les chevrons d'ouverture de la liste &lt;/ol&gt;</p>
+			
+			<li> <strong> La liste désordonnée </strong> </li>
+			<p> Elle permet de lister les informations sous forme de listes à puces. Pour cela, le code à réaliser est :
+			&lt;ul&gt; Inscriver les éléments de votre liste comme précedemment, puis fermer la liste &lt;/ul&gt;</p>
+			
+			<li> <strong> La liste de définition</strong>  </li>
+			<p> Cette liste permet comme un dictionnaire et comme son nom l'indique de donner les définitions d'un mot en y insérant selon votre envie
+			des synonymes. En effet, il est possible d'indiquer plusieurs pour une même définition, et inversément.
+			La forme générale du code est donc:
+			&lt;dl&gt;
+				&lt;dt&gt;	votre mot à définir&lt;/dt&gt;
+				Ajouter autant de nom à définir que vous souhaitez puis donner la définition commune à ces mots.
+				&lt;dd&gt; defintion du mot &lt;dd&gt;
+				Enfin, il faut fermer la liste de définition &lt;dl&gt;
+			
+			Nous pouvons prendre comme exemple le mot maison.
+			<dl> 
+				<dt> maison </dt>
+				<dd> Bâtiment servant à loger les personnes.</dd>
+			</dl>
+			</p>
+		</ol></ol>
+
+		<ol><h2> 4. Apparté </h2></ol>
+		<p>Pour sauvegarder les codes, il a été nécessaire de créer un compte sur GitHub. Cette sauvegarde est également un moyen de faire partager les fichiers
+		codes crées. Le fonctionnement de GitHub n'étant pas le sujet de cette page nous vous invitons à visiter des pages adaptées.</p>
 		
 	</body>
 </html>

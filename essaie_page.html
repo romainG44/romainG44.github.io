@@ -3,13 +3,28 @@
 <html>
 	<head>
 	<meta charset="utf-8" />
-		<title> Premier site et cours de HTML </title>
+		<title> Premier site et cours de HTML et de CSS </title>
 	</head>
 	<body>
-		<marquee direction="right"><strong>BONJOUR</strong></marquee>
-		<h1> Présentation de HTML et début de la structuration</h1>
+	
+	<!--Création du sommaire via la balise nav.-->
+	<nav> <ol> <li> <a href='#presentation'> Presentation de HTML et début de la structuration</a></li>
+	<li> <a href='#balise'>Présentation des balises</a></li>
+	<li> <a href='#caractères'>Mise en évidence de certains caractères</a></li>
+	<li> <a href='#listes'>Présentation des listes</a></li>
+	<li> <a href='#apparté'>Apparté</a></li>
+	<li> <a href='#liens'>Liens</a></li></ol></nav>
+	
+	
+	<img src="http://gifdrole.com/les_gifs_animes_des_chatons_les_plus_droles_et_mignons_du_monde/Chaton_Humour.gif" alt ="chaton pelote">
+	<img src="http://gifdrole.com/les_gifs_animes_des_chatons_les_plus_droles_et_mignons_du_monde/Chat_laser.gif" alt="chat laser>
+	<!--tri.jpg" alt="triceratops"-->
+	
+		<section>
+		<header>
+		<h1 id="presentation"> Présentation de HTML et début de la structuration</h1></header>
 		
-		<p>Html ou HyperText Markup Language est un format de données qui permet de créer des sites web. Depuis la version 3, il permet une compatibilité plus 
+		<article><p>Html ou HyperText Markup Language est un format de données qui permet de créer des sites web. Depuis la version 3, il permet une compatibilité plus 
 		forte avec CSS qui s'occupe de la partie graphique de la création d'une page web. HTML permet donc de structurer les données. Sa création remonte à 1991 grâce à
 		Tim Berners-Lee. Il existe aujourd'hui 5 version. La dernière HTML 5 est celle que nous utiliserons dans cette présentation.</p>
 		<p>Au départ de tout code, la version de html est visible entre chevrons, &lt;!doctype html&gt;. Cela indique que le site est écrit dans la version 5 de html. Sous cette inscription, une balise racine est indiquée sous la forme &lt;html&gt;
@@ -26,11 +41,11 @@
 		
 		<p>Cet ensemble head est désigné sous le terme "enfant". Il s'agit donc de l'enfant de la balise racine html. Cette racine possède un enfant,
 		il s'agit de la balise body. Cela se repère dans le code par une indentation par rapport à la balise racine. Comme pour toutes les autres balises, elle possède une ouverture et une fermeture. Ces indications d'ouverture 
-		et de fermeture vous seront expliquer dans la partie suivante.</p>
+		et de fermeture vous seront expliquer dans la partie suivante.</p></article> 
 		
 		
-		<ol><h2> 1. Présentation des balises</h2></ol>
-		<p>Les balises sous html se repèrent grâce aux chevrons. Elles sont de deux sortes, soient complètes, soient autofermante.
+		<h2 id="balise"> 1. Présentation des balises</h2>
+		<article><p>Les balises sous html se repèrent grâce aux chevrons. Elles sont de deux sortes, soient complètes, soient autofermante.
 		Dans le premier cas des balises d'ouverture, par exemple &lt;balises&gt;, et de fermeture, par exemple &lt;/balises&gt;, sont nécessaires.
 		Dans le second cas, la balise comporte avant le dernier chevron la marque de fermeture, /, par exemple &lt;balise/&gt;.
 		A l'intérieur des balises, plusieurs niveaux d'écriture peuvent exister. Dans ce cas, il faut respecter l'indentation afin de rendre plus 
@@ -38,12 +53,12 @@
 		
 		Ils existent deux balises qui sont interdites d'utilisation et qui proviennent d'un héritage des anciennes versions de HTML. Il s'agit
 		des balises &lt;br&gt; et &lt;he&gt;. La première balise interdite sert à ajouter un solide d'un point de vue sémantique. La deuxième balise interdite
-		ajoute une ligne horizontale. </p>
+		ajoute une ligne horizontale. </p> </article> 
 		
 	
-		<ol><h2> 2. Mise en évidence de certains caractères </h2></ol>
+		<h2 id="caractères"> 2. Mise en évidence de certains caractères </h2>
 		
-		<p>Nous allons voir maintenant comment mettre en avant plusieurs caractères en évidence. Pour cela, il existe différentes solutions, soit
+		<article><p>Nous allons voir maintenant comment mettre en avant plusieurs caractères en évidence. Pour cela, il existe différentes solutions, soit
 		la mise en <em> italique </em> par l'intermédiaire de &lt;em&gt; &lt;/em&gt;, soit la mise en <strong> gras </strong> grâce à &lt;strong&gt; &lt;/strong&gt;,
 		soit <mark> en surlignant </mark> avec &lt;mark&gt; &lt;/mark&gt;. </p>
 		<p> Il est possible d'afficher aussi les chevrons qui servant à encadrer les balises grâce à & lt; et & gt;. Pour les nécessités de l'affichage
@@ -51,12 +66,14 @@
 		<p>Au même titre que certains caractères, on peut mettre en évidence certains paragraphes par la présence soit de titre avec des formats différents,
 		comme il possible de le voir entre le titre de cette partie, ou de ce sous ensemble, et celui du début. 
 		Au maximum, il est toléré d'avoir 6 sous ensembles. Ces derniers se déclarent au sein du code comme suit : &lt;h1&gt; TITRE de la partie &lt;/h1&gt;.</p>
+		</article> 
 		
-		<ol><h2> 3. Présentation des listes</h2></ol>
-		<p> Il existe trois listes dispônibles dans HTML, la liste ordonnée, la liste désordonnée et la liste de définition.</p>
+		 
+		<h2 id="listes"> 3. Présentation des listes</h2>
+		<article><p> Il existe trois listes dispônibles dans HTML, la liste ordonnée, la liste désordonnée et la liste de définition.</p>
 		<ol><ol> 
 			<li> <strong> La liste ordonnée</strong> </li>
-			<p> Elle permet de lister les informations sous forme titre numéroté. 
+			<p> Elle permet de lister les informations sous forme de titre numéroté. 
 			Pour cela, le code à réaliser est le suivant:
 			<p>&lt;ol&gt; </p>
 				<p>&lt;li&gt; puis refermer vos chevrons &lt;/li&gt; </p>
@@ -76,17 +93,148 @@
 				&lt;dd&gt; defintion du mot &lt;dd&gt;
 				Enfin, il faut fermer la liste de définition &lt;dl&gt;
 			
-			Nous pouvons prendre comme exemple le mot maison.
-			<dl> 
+			<p> Nous pouvons prendre comme exemple le mot maison:</p> 
+			<dl> <em>
 				<dt> maison </dt>
 				<dd> Bâtiment servant à loger les personnes.</dd>
+				</em>
 			</dl>
 			</p>
 		</ol></ol>
-
-		<ol><h2> 4. Apparté </h2></ol>
-		<p>Pour sauvegarder les codes, il a été nécessaire de créer un compte sur GitHub. Cette sauvegarde est également un moyen de faire partager les fichiers
-		codes crées. Le fonctionnement de GitHub n'étant pas le sujet de cette page nous vous invitons à visiter des pages adaptées.</p>
+		</article> 
 		
+		 
+		<h2 id="apparté"> 4. Apparté </h2>
+		<article><p>Pour sauvegarder les codes, il a été nécessaire de créer un compte sur GitHub. Cette sauvegarde est également un moyen de faire partager les fichiers
+		codes crées. Le fonctionnement de GitHub n'étant pas le sujet de cette page nous vous invitons à visiter des pages adaptées.</p>
+		</article> 
+		
+		 
+		<h2 id="liens"> 5. Liens </h2>
+			<h3> 5.1 Lien vers un document </h3>
+			<article><p> La création de lien se fait par l'intermédiaire d'une nouvelle balise &lt;a&gt;. Pour créer le lien hypertexte, il nous faut réjouter un petit éléments
+			href. Ce-dernier est suivi du signe = et du lien hypertexte entre guillemets. L'attribut href donne la cible du lien vers lequel le texte qui suit renvoie. Il permet
+			soit d'avoir des hypertextes complets avec des liens possédant des URL complets, soit avec des liens avec des URL partiels (A DEFINIR).
+			Après cette balise, il est nécessaire de rajouter un texte, par exemple un texte qui permet de cliquer vers le lien.</article>
+			<p><a href='lien.html'> lien vers l'autre le fichier test </a></p>
+			<p><a href="Lien/second_lien.html"> lien vers un autre fichier test dans un dossier</a></p>
+		
+		
+		
+		<!--Cet attribut indique où afficher la ressource liée. Il s'agit du nom, ou du mot-clé, d'un contexte de navigation (par exemple, un onglet, une fenêtre, ou une <iframe>). Les mots-clés suivants ont un sens particulier :
+_parent : charge la réponse dans le <frameset> HTML4 parent de la frame courante ou dans le contexte de navigation HTML5 parent relativement au contexte courant). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.
+-->			
+			
+			<h3> 5.2 Liens inter document </h3>
+			<p>Ce lien permet d'atterir directement dans la partie souhaitée. Le cas le plus connue est l'utilisation dans le contexte d'un sommaire.
+			Pour faire référence avec la zone souhaitée, il faut d'abord définir l'id de cette partie. Celle-ci se place à l'intérieur d'une balise,
+			par exemple la balise &lt;article&gt;, ou &lt;h1&gt;. Elle se note de la manière suivante : &lt;h1 id="nom_du_lien"&gt;. Il est fortement recommandé
+			de ne pas utiliser d'espace dans le nom ainsi que de chiffre comme premier caractère. De même, cette attribut doit être <strong>unique</strong>.
+			Pour qu'il puisse fonctionner, il faut désormais appeler ce marqueur. Il fonctionne d'une manière similaire au lien. On ouvre la balise &lt;a&gt;. 
+			A l'intérieur de cette balise, on utilise l'attribut href. L'ensemble de la balise s'écrit donc de la manière suivante: &lt;article href="# nom_de_l'id" &gt;.</p>
+			
+			<p>Donnons un exemple. Nous avons un partie sur les cakes salés que l'on souhaite directement appelé depuis le sommaire.
+			Au niveau de cette partie, si nous avons utiliser la balise article, nous aurons alors: &lt;article id="cakes_sales"&gt;. 
+			Au niveau du sommaire, nous devrions inscire &lt;a href='#cakes_sales'>cakes salés/a&gt;. L'élément avant le cakes_sales est appelé une ancre.
+			</p>			
+			
+			
+			
+			<h3> 5.3 Liens vers un site avec une ouverture </h3>
+			<p> Pour intégrer des liens qui renvoient à d'autres sites, différents mots clés peuvent être ajoutés pour spécifier l'action que l'on souhaitez
+			effectuer en ouvrant ce lien.
+			La commande de base est la même que pour les autres liens, c'est à  dire : &lt;a href="URL du lien". La différence est qu'il y a un ajout de commande à la suite de celle-ci.
+					
+				<ul>
+				<li><h4> Ouverture de lien dans le même onglet </h4></li>
+				Cette action se fait directement. C'est le paramètre par défaut. Si l'on souhaite l'indiquer, il suffit d'ajouter les informations suivantes
+				target = "_self". On ferme ensuite les chevrons. 
+					
+				<li><h4> Ouverture dans un nouveau onglet</h4></li>
+				Cette action permet de garder sa page ouverte en même temps qu'un nouvel onglet est ouvert. Le code à taper est le suivant:
+				target ="_blank". Comme précédemment, on ferme les chevrons.
+					
+				<li><h4> Remonter vers le haut </h4></li>
+				Cette action permet de revenir en haut de la page web. La formule a notée est href="#top" ou target="_top" après la notification href.
+					
+				<li><h4> Remonter vers la navigation parente </h4></li>
+				Cette action permet de charger la réponse dans le contexte de navigation parent. En cas d'absence de parent, il se comporte comme le _self.
+				Cela se note au niveau de la manière suivante target="_parent".
+					
+				</ul> </p>
+					
+					
+		<h3 id="images"> 6. Les images </h3>
+					
+				Pour insérer une image au sein du code, il faut entrer la commande suivante &lt;img src="URL de l'image" alt="texte à afficher"&gt;.
+				Les formats pris en charge par cette commande sont, le jpeg, les gifs et ceux animés, PNG, APNG, SVG, BMP, ICO (bitmap), ICO (PNG).
+					
+					
+		<h3 id="tableau"> 7. les tableaux </h3>
+				<p>Sur HTML, un tableau correspond à un ensemble de cellulle sur plusieurs lignes. Il se définit par la balise &lt;table&gt; et est composé
+				de cellule &lt;td&gt; et de ligne &lt;tr&lt;. Pour créer un tableau de deux lignes et quatres cellules, il faudra donc coder les lignes suivantes:</p>
+				<table>
+					<tr><caption>Tableau d'essai</caption>
+					<thead> <!--Entête du tableau-->
+						<th>0</th>
+						<th>lettre</th>
+						<th>prenom</th>
+					</thead> 
+					<tfoot> <!--Pied de tableau-->
+						<th></th>
+						<th></th>
+					</tfoot>
+					<tbody>
+					<tr>
+						<th>1</th> <!--Entête de la ligne-->
+						<td align="center" rowspan="2" colspan="2">A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<th>2</th>	<!--Entête de la ligne-->						
+						<td colspan ="2">C</td>
+						<td rowspan ="2">D</td>
+						<td>E</td>
+					</tr>
+					<tr>
+						<th>3</th>	<!--Entête de la ligne-->						
+						<td>F</td>
+						<td>G</td>
+						<td>H</td>
+					</tr>
+					</tbody>
+				</table>
+				<p> Les entêtes sont ici symbolisés par la balise &lt;thead&gt; suivi des balises qui encerclent les annotations du tableau, &lt;th&gt;.
+				Ces entêtes peuvent occuper la première cellule de chaque ligne et serviront dans ce cas à identifier la ligne.
+				De même que l'on peut créer des entêtes, on peut créer des pieds de tableaux. Pour cela il faut utiliser les balises &lt;tfoot&gt;.
+				De manière académique, il convient de mettre l'ensemble des entêtes et des pieds après la balise d'ouverture du tableau.Viennent ensuite
+				les balises de remplissage du tableau. L'attribut <mark>rowspan</mark> permet d'agrandir la largeur de la cellule et l'attribut <mark>colspan</mark> la hauteur de la cellule.
+				L'utilisation seule de <mark>rowspan</mark> va "fusionner" la cellule de la valeur avec la cellule sous-jacente. L'utilisation seule de <mark>colspan</mark> va "fusionner" la cellule adjacente. 
+				L'aggrandissement des cellules a pour effet d'aggrandir les cellules sous-jacentes.</p>
+				<p> Il est possible de rajouter une légende pour le tableau. La légende se placera directement en début du tableau. Pour cela, l'annotation est la suivante:
+				&lt;caption&gt; Légende &lt;/caption&gt;.</p>
+				
+				<p> Remarque: 
+				Il existe la possibilité de créer des groupes de colonnes. L'attribut est <em>colgroup</em>. Ces balises doivent être mises soit après la balise table soit après la balise caption.
+				Ce groupement de colonne se traduit comme cela:</p>
+				<p>&lt;colgroup&gt;</p>
+					<p>&lt;col/&gt;</p>
+					<p>&lt;colspan="2"&gt;</p>
+				<p>&lt;/colgroup&gt;</p>
+					
+		</section>
+		
+		<!--Création de la partie généralité basique-->
+		<aside> 
+		<header> Informations genérales relatives à l'HTML et le CSS </header>
+		<p> blabla</p>
+		</aside>
+		
+		<!--Création du bas de page via la balise footer-->
+		<footer> <p>Réalisation sous logiciel Notepad++ </p>
+		<p><a href='https://developer.mozilla.org/fr/' target="_blank"> lien vers MDN</a></p>
+		<!--retour vers le haut-->
+		<p><a href="#top">Retourner en haut</a></p>
+		</footer>
 	</body>
 </html>

@@ -3,26 +3,27 @@
   height: 150px;
   width: 150px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .rouge{
   background-color:#FF0000;
   position: absolute; 
-  top: 20px; 
-  left: 20px; 
+  top: 30px; 
+  left: 30px; 
 }
 .vert{
   background-color:#00FF00;
   position: absolute; 
-  top: 40px; 
-  left: 40px; 
+  top: 60px; 
+  left: 60px; 
 }
 
 .bleu{  
    position: absolute;
    background-color:#0000FF;
-  top: 60px; 
-  left: 60px; 
+  top: 90px; 
+  left: 90px; 
 }
 
 .noir{

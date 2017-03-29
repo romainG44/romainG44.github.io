@@ -1,0 +1,127 @@
+.fond {
+  background-color:Tan;
+}
+
+.tri{
+	max-width: 12.5%;
+  float:right;
+  display:inline-block;
+}
+
+.image{
+  margin-left:45px;
+  display:inline-block;
+}
+
+.Sommaire{
+  display:block;
+  background-color : black;
+  color: white;
+  position: absolute; 
+  width: 350 px;
+  height: 350px;
+  border: 1px solid;
+  text-align: left;
+  left:20px;
+  top:200px;
+}
+
+.titre{
+  width: auto;
+  height: 5px;
+  text-align:center;
+}
+
+.aside{
+  display:block;
+  background-color : lightblue;
+  color: black;
+  position: absolute; 
+  width: 200px;
+  height: auto;
+  border: 1px solid;
+  text-align: right;
+  left: 1330px;
+  top:375px;
+}
+
+.presentation{
+  display:block;
+  color: black;
+  position: relative; 
+  width: 1000px;
+  height: 50px;
+  border: 1px solid;
+  top:-25px;
+  text-align:center;
+  background-color: SteelBlue;
+}
+
+.corpstexte{
+  display:block;
+  color: black;
+  position: absolute; 
+  width: 1000px;
+  height: 500px;
+  border: 1px solid;
+  top: 175px;
+  left : 275px;
+  right:200px;
+  overflow: scroll;
+}
+
+.HTML{
+  display:block;
+  color: black;
+  position: relative; 
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  background-color: firebrick;
+  top:-50px;
+}
+
+.Sauvegarde{
+  display:block;
+  color: black;
+  position: relative; 
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  background-color: orange;
+  top:-50px;
+}
+
+.liens{
+  display:block;
+  color: black;
+  position: relative; 
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  background-color: MediumSlateBlue;
+  top:-50px;
+}
+
+.CSS {
+  display:block;
+  color: black;
+  position: relative; 
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  background-color: firebrick;
+  top:-50px;
+}  
+
+
+.footer{
+  color: black;
+  position:  absolute; 
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  text-align: center;
+  background-color : LightGoldenRodYellow;
+  top:590px;
+}

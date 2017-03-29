@@ -2,24 +2,27 @@
   color: white;
   height: 150px;
   width: 150px;
-  text-align: center;
   display:inline-block;
+  border-radius: 75px;
 }
 
 .rouge{
   background-color:#FF0000;
   position: relative; 
+  top: 30px; 
+  left: 30px; 
+  
 }
 .vert{
   background-color:#00FF00;
   position: relative; 
-  top: 20px; 
-  left: -135px; 
+  top: 60px; 
+  left: -90px; 
 }
 
 .bleu{  
   position: relative;
   background-color:#0000FF;
-  top: 40px; 
-  left: -270px; 
+  top: 90px; 
+  left: -210px; 
 }

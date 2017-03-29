@@ -5,29 +5,34 @@
     <head>
     <meta charset="utf-8" />
         <title> Premier site et cours de HTML et de CSS </title>
+        <link href="footer.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+   <body class="fond">
     
     <!--Création du sommaire via la balise nav.-->
-    <nav> <ol> <li> <a href='#presentation'> Presentation de HTML et début de la structuration</a></li>
+    <nav class="Sommaire"> 
+    <p align ="center"> Sommaire</p>
+    <ul> <li><p><a href='#presentation'> Presentation de HTML </p>
+    <p>et début de la structuration</p></a></li></ul>
+    <ol> 
     <li> <a href='#balise'>Présentation des balises</a></li>
-    <li> <a href='#caractères'>Mise en évidence de certains caractères</a></li>
+    <li> <p><a href='#caractères'>Mise en évidence </p>
+    <p>de certains caractères</p></a></li>
     <li> <a href='#listes'>Présentation des listes</a></li>
     <li> <a href='#apparté'>Apparté</a></li>
     <li> <a href='#liens'>Liens</a></li>
     <li> <a href='#images'>Les images</a></li>
     <li> <a href='#tableau'>Les tableaux</a></li>
     </ol></nav>
-    
+    <header class="titre"> <font size ="+5"> <strong>Cours d'apprentissage du HTML et du CSS </strong></font size></header>
  
-    <img src="http://marmottesfantaisies.pagesperso-orange.fr/HTML/gifs1_le_coucou_de_la_marmotte.gif" alt="bonjour marmotte">
-    <img src="https://media.tenor.co/images/ef0c3f35784725661b9810e719b8dc68/tenor.gif" alt="marmotte milka">
-    <!--tri.jpg" alt="triceratops"-->
+    <img src="http://marmottesfantaisies.pagesperso-orange.fr/HTML/gifs1_le_coucou_de_la_marmotte.gif" alt="bonjour marmotte" class="image"/>
+    <img src="tri.jpg" alt="triceratops" class="tri"/>
     
-      <section>
-       <header>
-        <h1 id="presentation"> Présentation de HTML et début de la structuration</h1></header>
-        
+      <div class="corpstexte">
+      <header>
+        <h1 id="presentation" class="presentation"> Présentation de HTML et début de la structuration</h1></header>
+      <section class="HTML"> 
         <article><p>Html ou HyperText Markup Language est un format de données qui permet de créer des sites web. Depuis la version 3, il permet une 
         compatibilité plus forte avec CSS qui s'occupe de la partie graphique de la création d'une page web. HTML permet donc de structurer les données. Sa création 
         remonte à 1991 grâce à Tim Berners-Lee. Il existe aujourd'hui 5 version. La dernière HTML 5 est celle que nous utiliserons dans cette présentation.</p>
@@ -107,14 +112,15 @@
                 <dd> <em>Bâtiment servant à loger les personnes.</em></dd>
               </dl>
         </article> 
-        
-         
+      </section>
+      <section class="Sauvegarde">   
         <h2 id="apparté"> 4. Apparté </h2>
         <article><p>Pour sauvegarder les codes, il a été nécessaire de créer un compte sur GitHub. Cette sauvegarde est également un moyen de faire 
         partager les fichiers codes crées. Le fonctionnement de GitHub n'étant pas le sujet de cette page nous vous invitons à visiter des pages adaptées.</p>
         </article> 
-        
-         
+  
+      </section>
+      <section class="liens">
         <h2 id="liens"> 5. Liens </h2>
             <h3> 5.1 Lien vers un document </h3>
             <article><p> La création de lien se fait par l'intermédiaire d'une nouvelle balise &lt;a&gt;. Pour créer le lien hypertexte, il nous faut 
@@ -161,15 +167,15 @@
                   Cette action permet de charger la réponse dans le contexte de navigation parent. En cas d'absence de parent, il se comporte comme le _self.
                   Cela se note au niveau de la manière suivante target="_parent</li>
                 </ul>
-                    
-        <h3 id="images"> 6. Les images </h3>
+
+        <h2 id="images" class="images"> 6. Les images </h2>
                 <p>Pour insérer une image au sein du code, il faut entrer la commande suivante &lt;img src="URL de l'image" alt="texte à afficher"&gt;.
                 Les formats pris en charge par cette commande sont, le jpeg, les gifs et ceux animés, PNG, APNG, SVG, BMP, ICO (bitmap), ICO (PNG).</p>
                     
                     
-        <h3 id="tableau"> 7. les tableaux </h3>
+        <h2 id="tableau" class="tableau"> 7. les tableaux </h2>
                 <p>Sur HTML, un tableau correspond à un ensemble de cellulle sur plusieurs lignes. Il se définit par la balise &lt;table&gt; et est 
-                composé de cellule &lt;td&gt; et de ligne &lt;tr&lt;. Pour créer un tableau de deux lignes et quatres cellules, il faudra donc coder les 
+                composé de cellule &lt;td&gt; et de ligne &lt;tr&gt;. Pour créer un tableau de deux lignes et quatres cellules, il faudra donc coder les 
                 lignes suivantes:</p>
                 <table>
                     <caption>Tableau d'essai</caption>
@@ -223,21 +229,31 @@
                     <p>&lt;col/&gt;</p>
                     <p>&lt;colspan="2"&gt;</p>
                 <p>&lt;/colgroup&gt;</p>
-                    
       </section>
-        
+      
+
+
+      
+      <section class="CSS">
+      <h1> Présentation de CSS et début de la structuration</h1>       
+        <h2 id="selecteur"> 1. Les selecteurs </h2>
+          <p> EN COURS D'ECRITURE</p>
+      </section>
+      </div> 
       <!--Création de la partie généralité basique-->
-      <aside> 
+      <aside class="aside"> 
       <header> Informations genérales relatives à l'HTML et le CSS </header>
-      <p> blabla</p>
+      <p><a href='https://developer.mozilla.org/fr/' target="_blank"> lien d'aide vers MDN</a></p>
+      <p><a href='https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3' target="_blank"> lien d'aide vers openclassroom</a></p>
       </aside>
         
       <!--Création du bas de page via la balise footer-->
-      <footer> <p>Réalisation sous logiciel Notepad++ </p>
-      <p><a href='https://developer.mozilla.org/fr/' target="_blank"> lien d'aide vers MDN</a></p>
-      <p><a href='https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3' target="_blank"> lien d'aide vers openclassroom</a></p>
+      <div class="footer">
+      <footer> 
+      <p>Réalisation sous logiciel Notepad++ </p>
       <!--retour vers le haut-->
       <p><a href="#top">Retourner en haut</a></p>
+      </div>
       </footer>
-    </body>
+   </body>
 </html>

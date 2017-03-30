@@ -12,19 +12,25 @@
   top: 30px; 
   left: 30px; 
 }
-.vert{
+/*.vert{
   background-color:#00FF00;
   position: absolute; 
   top: 60px; 
   left: 60px; 
-}
+}*/
+/*.rouge:hover{
+  background-color:#00FF00;
+}*/
 
-.bleu{  
+p::before{content:"****";}
+p::after{content:"****";}
+
+/*.bleu{  
    position: absolute;
    background-color:#0000FF;
   top: 90px; 
   left: 90px; 
-}
+}*/
 
 .noir{
   background-color:black;

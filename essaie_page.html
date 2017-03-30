@@ -11,19 +11,23 @@
     
     <!--Création du sommaire via la balise nav.-->
     <nav class="Sommaire"> 
-    <p align ="center"> Sommaire</p>
-    <ul> <li><p><a href='#presentation'> Presentation de HTML </p>
-    <p>et début de la structuration</p></a></li></ul>
+    <p align ="center"> <strong>Sommaire</strong></p>
+    <ul> <li><a href='#presentation'> Presentation de HTML</br>
+    et début de la structuration</a></li></ul>
     <ol> 
     <li> <a href='#balise'>Présentation des balises</a></li>
-    <li> <p><a href='#caractères'>Mise en évidence </p>
-    <p>de certains caractères</p></a></li>
+    <li> <a href='#caractères'>Mise en évidence</br>
+    de certains caractères</a></li>
     <li> <a href='#listes'>Présentation des listes</a></li>
     <li> <a href='#apparté'>Apparté</a></li>
     <li> <a href='#liens'>Liens</a></li>
     <li> <a href='#images'>Les images</a></li>
     <li> <a href='#tableau'>Les tableaux</a></li>
     </ol></nav>
+    
+    
+    
+    
     <header class="titre"> <font size ="+5"> <strong>Cours d'apprentissage du HTML et du CSS </strong></font size></header>
  
     <img src="http://marmottesfantaisies.pagesperso-orange.fr/HTML/gifs1_le_coucou_de_la_marmotte.gif" alt="bonjour marmotte" class="image"/>
@@ -170,7 +174,10 @@
 
         <h2 id="images" class="images"> 6. Les images </h2>
                 <p>Pour insérer une image au sein du code, il faut entrer la commande suivante &lt;img src="URL de l'image" alt="texte à afficher"&gt;.
-                Les formats pris en charge par cette commande sont, le jpeg, les gifs et ceux animés, PNG, APNG, SVG, BMP, ICO (bitmap), ICO (PNG).</p>
+                Les formats pris en charge par cette commande sont, le jpeg, les gifs et ceux animés, PNG, APNG, SVG, BMP, ICO (bitmap), ICO (PNG).
+                Il faut noter que le format BMP est à proscrire car la résolution est sous forme de pixel. La différence entre jpeg et PNG se fait principalement sur la résolution.
+                C'est pour cela, que le jpeg est plus adapté pour la photo. L'avantage du PNG est qu'il gère la transparence, c'est-à-dire que les images peuvent se superposer
+                au texte sans réel soucis.</p>
                     
                     
         <h2 id="tableau" class="tableau"> 7. les tableaux </h2>
@@ -237,6 +244,24 @@
       <section class="CSS">
       <h1> Présentation de CSS et début de la structuration</h1>       
         <h2 id="selecteur"> 1. Les selecteurs </h2>
+        <p> Les selecteurs servent à appeler les éléments qui doivent être impactés par les informations du CSS. Ces selecteurs peuvent être des classes, des id,...
+        Ces sélecteurs permmettent de spécifier des endroits spécifiques sur lesquels le CSS va agir. Dans le cas d'une class il faudra que le nom de la classe soit
+        précéder d'un point ".". Dans le cas d'un id, il faudra un "#".
+        
+        Il est possible de combiner plusieurs selecteurs, via différents opérateurs : </p>
+        <ul>
+          <li> le selecteur de voisin immédiat "+". <p>Un exemple sera plus parlant. Si nous observons l'expression : dl+dl, cela signifie que toute définition suivie d'une autre définition
+          sera impactée par les instructions du CSS. Si une définition est suivie par autre chose, les instructions ne se réaliseront pas.</p></li>
+          <li> le selecteur de voisin indirect "~". <p>Prenons l'exemple suivant img~a. Le symbol ~ indique le selecteur. Cela indique que les instructions du CSS vont 
+          s'appliquer aux enfants "a" de l'img quelque soit sa position au sein de la même balise et du même niveau.</p></li>
+          <li> Le selecteur de descendant "&gt;". <p>Comme son nom l'indique, les effets de l'instruction CSS sont reportés sur le niveau inférieur.Prenons l'exemple de la liste de définition.
+          si en selecteur nous indiquaons dl&gt;div;. Cela indique que le dl est le parent et le div l'enfant, autrement dit tout les div qui sont des descendants directs de dl
+          seront impactés par les instructions du CSS.</p></li>
+          <li> Le selecteur de descendant à échelons différents "&nbsp;". <p>Prenons un exemple : div p. Nous pouvons remarquer que l'opérateur indiquant la descendance est un espace. Cela
+          implique que tout les paragraphes "p" du parent "div" seront affetés par les instructions du CSS.</p></li>
+          <li> Le selecteur universel "*". <p> Il permet d'appliquer les informations du CSS à l'ensemble du HTML.</p></li>
+        </ul>
+        
           <p> EN COURS D'ECRITURE</p>
       </section>
       </div> 

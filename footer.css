@@ -1,60 +1,75 @@
 .fond {
   background-color:Tan;
+  display:flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 .tri{
 	max-width: 12.5%;
-  float:right;
-  display:inline-block;
+  /*float:right;
+  display:inline-block;*/
+  align-items :flew-end;
 }
 
 .image{
-  margin-left:45px;
-  display:inline-block;
+  /*margin-left:45px;
+  /*display:inline-block;*/
+  flex-direction :row;
+  align-items: felx-start;
 }
 
 .Sommaire{
   display:block;
   background-color : black;
   color: white;
-  position: absolute; 
+  /*position: absolute;*/ 
   width: 350 px;
   height: 350px;
   border: 1px solid;
   text-align: left;
-  left:20px;
-  top:200px;
+  /*left:20px;
+  top:200px;*/ 
+  border-radius: 15px;
+  line-height:20px;
+  flex-wrap:wrap;
+  flex-grow: 1;
 }
 
 .titre{
   width: auto;
   height: 5px;
   text-align:center;
+  font-family: Jokerman;
+  flex-grow:1;
 }
 
 .aside{
   display:block;
   background-color : lightblue;
   color: black;
-  position: absolute; 
+  /*position: absolute;*/ 
   width: 200px;
-  height: auto;
+  height: 150px;
   border: 1px solid;
   text-align: right;
-  left: 1330px;
-  top:375px;
+  /*left: 1330px;
+  top:375px;*/ 
+  border-radius: 15px;
+  flex-grow: 1;
 }
 
 .presentation{
   display:block;
   color: black;
-  position: relative; 
-  width: 1000px;
+  /*position: relative; */
+  width: 982px;
   height: 50px;
   border: 1px solid;
-  top:-25px;
+  /*top:-25px;*/
   text-align:center;
   background-color: SteelBlue;
+  flex-grow: 1;
 }
 
 .corpstexte{
@@ -64,10 +79,13 @@
   width: 1000px;
   height: 500px;
   border: 1px solid;
-  top: 175px;
+ /*  top: 175px;
   left : 275px;
-  right:200px;
-  overflow: scroll;
+  right:200px;*/
+  overflow-y: scroll;
+  overflow-X:hiden;
+  flex-grow: 2;
+  align-items: felx-start;
 }
 
 .HTML{
@@ -114,7 +132,6 @@
   top:-50px;
 }  
 
-
 .footer{
   color: black;
   position:  absolute; 
@@ -124,4 +141,10 @@
   text-align: center;
   background-color : LightGoldenRodYellow;
   top:590px;
+  border-radius: 15px;
+  flex-grow: 1;
+}
+
+.Sommaire, .footer, .liens, .corpsdetexte, .presentation, .aside, .titre{
+flex:1 100%;
 }

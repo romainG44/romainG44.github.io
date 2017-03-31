@@ -35,9 +35,11 @@
   height:100%;
 }
 .titre{
+  background-color: #00BFFF;
   text-align:center;
   font-family: Jokerman;
   width: 80%;
+  align-self:center;
 }
 
 .corpsprincipal{
@@ -93,10 +95,11 @@
   border: 1px solid;
   background-color: orange;
 }
-
 .tableauexemple{
+  align-self:center;
   background-color:gray;
   border: 1px solid;
+  width:500px;
 }
 .liens{
   color: black;
@@ -112,16 +115,29 @@
   width: auto;
   height: auto;
   border: 1px solid;
-  background-color: firebrick;
+  background-color: #FFB6C1;
   top:-50px;
 }
+.deroulant{
+  background-color:gray;
+}
+
+.choixàcocher{
+  background-color:gray;
+  width:50%;  
+}
+
+.choixpuces{
+  background-color:gray;
+  width:50%; 
+}
+
 
 .complement{
   display: flex;    
   align-content: center;
   flex-direction:column;
   width:15%;
-  margin-left:73.5px;
 }
 .aside{
   background-color : lightblue;
@@ -131,7 +147,7 @@
   border: 1px solid;
   text-align: left;
   border-radius: 15px;
-  margin:10px;
+  margin:5px;
 }
 .commentaires{
   background-color:gray;
@@ -147,4 +163,5 @@
   text-align: center;
   background-color : LightGoldenRodYellow;
   border-radius: 15px;
+  margin:5px;
 }

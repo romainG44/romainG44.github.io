@@ -5,7 +5,7 @@
     <head>
     <meta charset="utf-8" />
         <title> Premier site et cours de HTML et de CSS </title>
-        <link href="CSS_sansflex.css" rel="stylesheet" type="text/css"/>
+        <link href="footer.css" rel="stylesheet" type="text/css"/>
     </head>
    <body class="fond">
     <div class="entete">  
@@ -13,7 +13,7 @@
     <header class="titre"> <font size ="+5"> <strong>Cours d'apprentissage du HTML et du CSS </strong></font size></header>
     <img src="tri.jpg" alt="triceratops" class="tri"/>
     </div>
-    
+   <div class="corpsprincipal">
     <!--Création du sommaire via la balise nav.-->
     <nav class="Sommaire"> 
     <p align ="center"> <strong>Sommaire</strong></p>
@@ -269,13 +269,83 @@
           implique que tout les paragraphes "p" du parent "div" seront affetés par les instructions du CSS.</p></li>
           <li> Le selecteur universel "*". <p> Il permet d'appliquer les informations du CSS à l'ensemble du HTML.</p></li>
         </ul>
+
+        <h2 id="pseudoclass"> 2. Pseudoclass </h2>
+        <p> Les pseudoclass permettent de modifier ou de préciser l'état de la class. Grâce au informations rajoutées à la suite de la class, il est possible soit de modifier une couleur en passant la
+        souris dessus, .rouge:hover{};, soit personaliser le lien visité, .a:visited;, soit d'affecter une règle à des enfants particuliers, :nth-child(2n).
+        De plus amples informations pourront vous être détaillées, grâce à ce lien sur les<a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments" target="_blank"> pseudo-éléments</a></p>
+
+
         
-        <h2 id="formulaires"> 2. Les formulaires </h2>
+        <h2 id="formulaires"> 3. Les formulaires </h2>
         <p>Pour créer un formulaire, il faut créer une balise qui permettra d'encadrer les informations à mettre, telles que le nom ou pseudo, le mail, le commentaire, et surtout à ne pas oublier
-        le bouton envoyez.</p>
+        le bouton envoyez.Commençons par créer un cadre pour le nom. Pour cela dans les balises &lt;form&gt;, il faut créer une deuxième balise, nommé input.
+        Cette balise va contenir plusieurs attributs. Ceux que nous utiliserons, sont les attributs type, name et id. Pour indiquer le nom de la case d'un formulaire, il 
+        faut utiliser la balise label. Dans la balise &lt;label&gt;, il faut ajouter l'attribut for="" et y intégrer l'id du label.Voici un exemple:
+        <p> &lt;form action="" method=""&gt;</p>
+        <p>&lt;label for="name"&gt;Votre nom&lt;/labe&gt;</p>
+        <p>&lt;input type="text" name="name" id="name"/&gt;</p>
+        <p>&lt;/form&gt;</p>
+        </p>
         
+        <p>La procédure est la même si on veut demander à l'utilisateur d'ajouter son adresse mail et un commentaire. Pour l'adresse mail, le type sera "mail". Pour le commentaire, il faut remplacer
+        input par "textarea". Dans le cas du commentaire, il faut fermer la balise. Il ne s'agit pas d'une balise autofermante.</p>
         
+        <p>Pour ajouter le bouton envoyez, il suffit d'introduire la balise button, avec le type, pour le cas présent, "submit". Tout comme label, on entre
+        la valeur que l'on souhaite, et on referme ensuite la balise button, &lt;/button&gt;.</p>
         
+          <h3> Les formulaires à choix multiples </h3>
+          <p>Il existe différents types de formulaires à choxs multiples dans les formulaires :</p>
+          <ul> <li> Les choix à cocher</li> <p> Dans ce cas, il faut changer le type dans input et le remplacer par "checkbox". A la fin de la balise input, on peut ajouter une valeur avec l'atttibut "value".</p>
+               <li> Les choix à puces</li> <p> La manipulation est la même mais au lieu de remplacer de checkbox, on remplace par "radio".</p>
+               <li> Les choix à menu déroulant</li> <p>Pour ce type de choix, le input ne s'applique, il faut ouvrir une nouvelle balise "select" et y indiquer l'attribut name. Pour avoir des choix, il faut ajouter des balises option.
+               Chaque balise &lt;option&gt; doit contenir une valeur "value". Ensuite on entre la valeur du choix et on referme la balise option.</p>
+          </ul>
+          <p>Pour regrouper ces choix une commande simple est à ajouter. Il faut marquer au début des balises qui démarrent le choix, &lt;optgroup label=""&gt; L'attriut label va permettre de nommer le groupe des choix.</p>
+          <p>Prenons un exemple, nous voulons un choix déroulant de continent et de pays, pour rester original.</p>
+          <p> &lt;select name="pays"&gt;</p>
+          <p>&lt;optgroup label="Europe"&gt;</p>
+            <p>&lt;option value="1"&gt;
+            Islande
+            &lt;/option&gt;</p>
+            <p>&lt;option value="2"&gt;
+            Norvège
+            &lt;/option&gt;</p>
+            <p>&lt;option value="3"&gt;
+            Dannemark
+            &lt;/option&gt;</p>
+            <p>&lt;option value="4"&gt;
+            Suède
+            &lt;/option&gt;</p>
+            <p>&lt;option value="5"&gt;
+            Finland
+            &lt;/option&gt;</p>
+            <p>&lt;/optgroup&gt;  </p> 
+        <p>&lt;optgroup label="Afrique"&gt;</p>
+          <p>&lt;option value="1"&gt;
+          Maroc
+          &lt;/option&gt;</p>
+          <p>&lt;option value="2"&gt;
+          Algérie
+          &lt;/option&gt;</p>
+          <p>&lt;option value="3"&gt;
+          Tunisie
+          &lt;/option&gt;</p>
+          <p>&lt;option value="4"&gt;
+          Lybie
+          &lt;/option&gt;</p>
+          <p>&lt;option value="5"&gt;
+          Egypte
+          &lt;/option&gt;</p>
+        <p>&lt;/optgroup&gt; </p>          
+        <p>&lt;/select&gt;</p>
+         
+        <p>Voici le résultat de ces lignes : .....</p>
+        
+        <h3> Les formulaires à choix simples et imposés</h3>
+        <p>Il est possible de rendre l'ensemble de ses listes de choix multiples en liste simple. 
+        Il suffit d'indiquer, dans l'attribut name="", le même nom partout.</p>
+        <p> Pour imposer un choix dans un formulaire, on ajoute à la fin des balises &lt; input&gt;, &lt;textarea&gt; et &lt;select&gt;.</p>
         
           <p> EN COURS D'ECRITURE</p>
       </section>
@@ -297,6 +367,7 @@
       </div>
       </footer>
       </div>
+    </div>
   </body>
   </div>
 </html>

@@ -2,7 +2,6 @@
   display: flex;    
   flex-flow: row wrap;
   font-weight: bold;
-  text-align: center;
 }
 @media all and {
   .entete {order: 1;}
@@ -26,35 +25,30 @@
   text-align: center;
 }
 .tri{
-  /*display:inline-block;*/
 	max-width: 12.5%;
-  /*float:right;*/
- /* display:inline-block;*/
  width: 10%;
  height:100%;
  
 }
 .image{
-  /*margin-left:45px;*/
-  /*display:inline-block;*/
   width: 10%;
   height:100%;
 }
 .titre{
-  /*width: auto;
-  height: 5px;*/
   text-align:center;
   font-family: Jokerman;
   width: 80%;
 }
 
+.corpsprincipal{
+  display: flex;    
+  flex-flow: row;
+  font-weight: bold;
+
+}
+
 .Sommaire{
-  /*display:block;
-  position: absolute;
-  left:20px;
-  top:200px;*/  
-  
-  background-color : black;
+ background-color : black;
   color: white;
   width: 15%;
   height: 350px;
@@ -63,70 +57,43 @@
   border-radius: 15px;
   line-height:20px;
   align-self:center;
+
 }
 
 .complement{
   display: flex;    
-  font-weight: bold;
   align-content: center;
   flex-direction:column;
-  flex-flow: row-reverse wrap;
-  width:10%;
+  width:15%;
   margin-left:73.5px;
 }
 .aside{
-  /*display:block;
-  position: absolute;  
-  left: 1330px;
-  top:375px;*/
-  
   background-color : lightblue;
   color: black;
   width: 100%;
-  height: 150px;
+  height: 70%;
   border: 1px solid;
   text-align: right;
   border-radius: 15px;
-  align-self:center;
-  align-self:right;
-  order:1;
 }
 .footer{
-  /*display:block;
-  position:absolute;  
-  top:590px;  
-  left:20px; */ 
   color: black;
   width: 100%;
-  height: 150px;
+  height: 30%;
   border: 1px solid;
   text-align: center;
   background-color : LightGoldenRodYellow;
   border-radius: 15px;
-  order:2;
-  width: 100%;
 }
 
 .corpstexte{
-  /*background :white;*/
-  /*display:block;
-  position: absolute;
-  top: 175px;
-  left : 275px;
-  right:200px;*/
-  
   color: black;
   width: 70%;
   height: 500px;
-  /*border: 1px solid;*/
   overflow-y: scroll;
   overflow-X:hiden;
 }
 .presentation{
-  /*display:block;
-  position: relative;
-  top:-25px;  
-  */ 
   color: black;
   width: 100%;
   height: 75px;
@@ -142,7 +109,6 @@
   height: auto;
   border: 1px solid;
   background-color: firebrick;
-  /*top:-50px;*/
 }
 .Sauvegarde{
   display:block;
@@ -152,12 +118,8 @@
   height: auto;
   border: 1px solid;
   background-color: orange;
-  /*top:-50px;*/
 }
 .liens{
-/*display:block;
-  position: relative;   
-  top:-50px;*/  
   color: black;
   width: auto;
   height: auto;

@@ -8,7 +8,7 @@
     <body>
       <form action="" method="post">
         <label for="name">Votre nom :</label>
-        <input type="text" name="pseudo" id="name"/>
+        <input type="text" name="pseudo" id="name" placeholder="Ex : toto" maxlength="5" required />
         
         <br/>
         <label for="mail"> Email :</label>
@@ -16,15 +16,90 @@
         
         <br/>
         <label for = "commentaire"> Comment puis-je améliorer le site?</label>
-        <textarea type="text" name="commentaire" id="commentaire">
+        <textarea type="text" name="commentaire" id="commentaire" >
         </textarea>
         
-        <button type="reset"> supprimez</button>
-        
-        
+        <button type="reset"> supprimez</button>       
         <button type="submit">envoyez</button>
         
+        <p> Comment détruire la Terre</p>
+        <label for="nucléaire">Arme nucléaire</label>
+        <input type="checkbox" name="nucléaire" id="nucléaire" value="valeur1"/>
+        <label for="épidémie">Epidémie</label>
+        <input type="checkbox" name="épidémie" id="épidémie" value="valeur2"/>
+        <label for="guerre">guerre</label>
+        <input type="checkbox" name="guerre" id="guerre" value="valeur3"/>
+        <p>
+        <select name="pays">
+          <optgroup label="Pays">
+          <option value="1">
+          Islande
+          </option>
+          <option value="2">
+          Norvège
+          </option>
+          <option value="3">
+          Dannemark
+          </option>
+          <option value="4">
+          Suède
+          </option>
+          <option value="5">
+          Finland
+          </option>
+          </optgroup>   
+        <optgroup label="Continent">
+          <option value="1">
+          Europe
+          </option>
+          <option value="2">
+          Asie
+          </option>
+          <option value="3">
+          Amériques
+          </option>
+          <option value="4">
+          Antarctique
+          </option>
+          <option value="5">
+          Afrique
+          </option>
+          </optgroup>           
+        </select>
+        </p>
         
+        
+        <input type="text" required />
+        
+        <p>
+        <select name="pays" multiple>
+          <option value="1">
+          Islande
+          </option>
+          <option value="2">
+          Norvège
+          </option>
+          <option value="3">
+          Dannemark
+          </option>
+          <option value="4">
+          Suède
+          </option>
+          <option value="5">
+          Finland
+          </option>        
+        </select>
+        </p>
+        
+        <fieldset>
+        <legend> Destruction du monde </legend>
+        <label for="nucléaire1">Arme nucléaire1</label>
+        <input type="radio" name="arme" id="nucléaire1"/>
+        <label for="épidémie1">Epidémie1</label>
+        <input type="radio" name="arme" id="épidémie1"/>
+        <label for="guerre1">guerre1</label>
+        <input type="radio" name="arme" id="guerre1"/>
+        </fieldset>
         
       </form>
     

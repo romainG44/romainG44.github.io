@@ -49,18 +49,43 @@
 
 }
 
+.sommairechat{
+  display: flex;    
+  flex-flow: row wrap;
+  font-weight: bold;
+   width: 15%;
+}
+
 .Sommaire{
   background-color : black;
   color: white;
-  width: 15%;
+  width: 100%;
   height: 75%;
   border: 1px solid;
   text-align: left;
   border-radius: 15px;
   line-height:20px;
-  align-self:center;
 
 }
+
+.chatlaser1 {
+    height: 25%;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius:100px;
+  animation-direction:alternate;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.chatlaser1:hover {
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+
 
 .corpstexte{
   color: black;
@@ -120,6 +145,18 @@
 }
 .deroulant{
   background-color:gray;
+}
+
+.chat{
+  
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.chat:hover{
+  background-color: #00BBFF;
+  width: 200px;
+  height: 200px;
+  transform: rotate(360deg);
 }
 
 .choixàcocher{

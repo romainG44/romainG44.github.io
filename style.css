@@ -1,4 +1,4 @@
-.carre {
+/*.carre {
   color: white;
   height: 150px;
   width: 150px;
@@ -21,9 +21,9 @@
 /*.rouge:hover{
   background-color:#00FF00;
 }*/
-
+/*
 p::before{content:"****";}
-p::after{content:"****";}
+p::after{content:"****";}*/
 
 /*.bleu{  
    position: absolute;
@@ -31,7 +31,7 @@ p::after{content:"****";}
   top: 90px; 
   left: 90px; 
 }*/
-
+/*
 .noir{
   background-color:black;
    position: absolute; 
@@ -58,4 +58,26 @@ p::after{content:"****";}
     position: relative; 
     top: 300px; 
     left: 700px;
+}*/
+
+
+.marron {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius:100px;
+  background-color: #0000FF;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.marron:hover {
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
 }

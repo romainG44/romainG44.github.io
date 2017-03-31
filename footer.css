@@ -48,10 +48,10 @@
 }
 
 .Sommaire{
- background-color : black;
+  background-color : black;
   color: white;
   width: 15%;
-  height: 350px;
+  height: 75%;
   border: 1px solid;
   text-align: left;
   border-radius: 15px;
@@ -60,38 +60,12 @@
 
 }
 
-.complement{
-  display: flex;    
-  align-content: center;
-  flex-direction:column;
-  width:15%;
-  margin-left:73.5px;
-}
-.aside{
-  background-color : lightblue;
-  color: black;
-  width: 100%;
-  height: 70%;
-  border: 1px solid;
-  text-align: right;
-  border-radius: 15px;
-}
-.footer{
-  color: black;
-  width: 100%;
-  height: 30%;
-  border: 1px solid;
-  text-align: center;
-  background-color : LightGoldenRodYellow;
-  border-radius: 15px;
-}
-
 .corpstexte{
   color: black;
   width: 70%;
   height: 500px;
   overflow-y: scroll;
-  overflow-X:hiden;
+  overflow-X:hidden;
 }
 .presentation{
   color: black;
@@ -119,6 +93,11 @@
   border: 1px solid;
   background-color: orange;
 }
+
+.tableauexemple{
+  background-color:gray;
+  border: 1px solid;
+}
 .liens{
   color: black;
   width: auto;
@@ -135,4 +114,37 @@
   border: 1px solid;
   background-color: firebrick;
   top:-50px;
+}
+
+.complement{
+  display: flex;    
+  align-content: center;
+  flex-direction:column;
+  width:15%;
+  margin-left:73.5px;
+}
+.aside{
+  background-color : lightblue;
+  color: black;
+  width: 100%;
+  height: 70%;
+  border: 1px solid;
+  text-align: left;
+  border-radius: 15px;
+  margin:10px;
+}
+.commentaires{
+  background-color:gray;
+  height: 25%;
+  width:15%;
+  align-self:flex-end;
+}
+.footer{
+  color: black;
+  width: 100%;
+  height: 30%;
+  border: 1px solid;
+  text-align: center;
+  background-color : LightGoldenRodYellow;
+  border-radius: 15px;
 }

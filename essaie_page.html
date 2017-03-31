@@ -176,7 +176,7 @@
                 Les formats pris en charge par cette commande sont, le jpeg, les gifs et ceux animés, PNG, APNG, SVG, BMP, ICO (bitmap), ICO (PNG).
                 Il faut noter que le format BMP est à proscrire car la résolution est sous forme de pixel. La différence entre jpeg et PNG se fait principalement sur la résolution.
                 C'est pour cela, que le jpeg est plus adapté pour la photo. L'avantage du PNG est qu'il gère la transparence, c'est-à-dire que les images peuvent se superposer
-                au texte sans réel soucis.</p>
+                au texte sans réel soucis. Il est important de garder en mémoire qu'il faut de préférence redimensionner l'image avant de l'intégrer dans le html.</p>
                     
                     
         <h2 id="tableau" class="tableau"> 7. les tableaux </h2>
@@ -252,7 +252,9 @@
         <h2 id="selecteur"> 1. Les selecteurs </h2>
         <p> Les selecteurs servent à appeler les éléments qui doivent être impactés par les informations du CSS. Ces selecteurs peuvent être des classes, des id,...
         Ces sélecteurs permmettent de spécifier des endroits spécifiques sur lesquels le CSS va agir. Dans le cas d'une class il faudra que le nom de la classe soit
-        précéder d'un point ".". Dans le cas d'un id, il faudra un "#".
+        précéder d'un point ".". Dans le cas d'un id, il faudra un "#". Un ordre de priorité est cependant à respecter. Le selecteur d'un id sera dominant par rapport à un selecteur class.
+        Un selecteur class est dominant sur un selecteur élement.
+        
         
         Il est possible de combiner plusieurs selecteurs, via différents opérateurs : </p>
         <ul>
@@ -267,6 +269,13 @@
           implique que tout les paragraphes "p" du parent "div" seront affetés par les instructions du CSS.</p></li>
           <li> Le selecteur universel "*". <p> Il permet d'appliquer les informations du CSS à l'ensemble du HTML.</p></li>
         </ul>
+        
+        <h2 id="formulaires"> 2. Les formulaires </h2>
+        <p>Pour créer un formulaire, il faut créer une balise qui permettra d'encadrer les informations à mettre, telles que le nom ou pseudo, le mail, le commentaire, et surtout à ne pas oublier
+        le bouton envoyez.</p>
+        
+        
+        
         
           <p> EN COURS D'ECRITURE</p>
       </section>

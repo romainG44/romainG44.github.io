@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-  <div class="wrapper">
     <head>
     <meta charset="utf-8" />
         <title> Premier site et cours de HTML et de CSS </title>
         <link href="footer.css" rel="stylesheet" type="text/css"/>
     </head>
    <body class="fond">
+     <div class="wrapper">
     <div class="entete">  
     <img src="http://marmottesfantaisies.pagesperso-orange.fr/HTML/gifs1_le_coucou_de_la_marmotte.gif" alt="bonjour marmotte" class="image"/>
-    <header class="titre"> <font size ="+5"> <strong>Cours d'apprentissage du HTML et du CSS </strong></font size></header>
+    <header class="titre"> <strong>Cours d'apprentissage du HTML et du CSS </strong></header>
     <img src="tri.jpg" alt="triceratops" class="tri"/>
     </div>
    <div class="corpsprincipal">
@@ -21,7 +21,7 @@
     <p align ="center"> <strong>Sommaire</strong></p>
     <ol> 
     <li> <a href='#balise'>Présentation des balises</a></li>
-    <li> <a href='#caractères'>Mise en évidence</br>
+    <li> <a href='#caractères'>Mise en évidence
     de certains caractères</a></li>
     <li> <a href='#listes'>Présentation des listes</a></li>
     <li> <a href='#apparté'>Apparté</a></li>
@@ -373,28 +373,30 @@
         <p>Voici des exemples des autres types de choix:</p>
           <div class="choixàcocher">
           <ul> <li> Exemple choix 1:</li>       
-          <p> Comment aimez-vous votre café</p>
+          Comment aimez-vous votre café
           <label for="sucré">Avec du sucre</label>
           <input type="checkbox" name="sucré" id="sucré" value="valeur1"/>
-          <p><label for="Sanssucre">Sans sucre</label>
-          <input type="checkbox" name="Sanssucre" id="Sanssucre" value="valeur2"/></p>
-          <p><label for="décaféiné">décaféiné</label>
-          <input type="checkbox" name="décaféiné" id="décaféiné" value="valeur3"/></p>
-          <p><label for="Corsé">Corsé</label>
-          <input type="checkbox" name="Corsé" id="Corsé" value="valeur3"/></p>
+          <label for="Sanssucre">Sans sucre</label>
+          <input type="checkbox" name="Sanssucre" id="Sanssucre" value="valeur2"/>
+          <label for="décaféiné">décaféiné</label>
+          <input type="checkbox" name="décaféiné" id="décaféiné" value="valeur3"/>
+          <label for="Corsé">Corsé</label>
+          <input type="checkbox" name="Corsé" id="Corsé" value="valeur3"/>
+          </ul>
           </div>
         
           <div class="choixpuces">
+          <ul>
           <li>Exemple choix à puces:</li>
-          <p> Comment aimez-vous votre café</p>
-          <label for="sucré">Avec du sucre</label>
-          <input type="radio" name="sucré" id="sucré"/>
-          <p><label for="Sanssucre">Sans sucre</label>
-          <input type="radio" name="Sanssucre" id="Sanssucre"/></p>
-          <p><label for="décaféiné">décaféiné</label>
-          <input type="radio" name="décaféiné" id="décaféiné"/></p>
-          <p><label for="Corsé">Corsé</label>
-          <input type="radio" name="Corsé" id="Corsé"/></p>
+           Comment aimez-vous votre café
+          <label for="sucré1">Avec du sucre</label>
+          <input type="radio" name="sucré1" id="sucré1"/>
+          <label for="Sanssucre1">Sans sucre</label>
+          <input type="radio" name="Sanssucre1" id="Sanssucre1"/>
+          <label for="décaféiné1">décaféiné</label>
+          <input type="radio" name="décaféiné1" id="décaféiné1"/>
+          <label for="Corsé1">Corsé</label>
+          <input type="radio" name="Corsé1" id="Corsé1"/>
           </ul>
           </div>
         </fieldset>
@@ -422,8 +424,8 @@
         De plus amples informations peuvent être apportées par ce lien : <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/' target="_blank"> lien d'aide pour l'utilisation des flexbox</a></p>
         
         <h2 id="transitions"> 5. Les transitions en images </h2>
-        Sur CSS il est possible d'appliquer sur des images simple ou des gif des effets. Pour créer un carré bleu qui se tranforme en carré rose, nous utilisons
-        un pseudo-elements qui va indiquer les effets finaux de la transition. Pour appliquer on utilise dans le selecteur, associé à l'image, auquel on voit appliquer la transition, l'outil transition.
+        <p>Sur CSS il est possible d'appliquer sur des images simple ou des gif des effets. Pour créer un carré bleu qui se tranforme en carré rose, nous utilisons
+        un pseudo-elements qui va indiquer les effets finaux de la transition. Pour appliquer on utilise dans le selecteur, associé à l'image, auquel on voit appliquer la transition, l'outil transition.</p>
         
         
         
@@ -439,11 +441,11 @@
       <p><a href='https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3' target="_blank"> lien d'aide vers openclassroom</a></p>
 
      
-       <form action="" method="post">
+       <form action=" " method="post">
         <p><label for="name">Votre pseudo:</label>
         <input type="text" name="pseudo" id="name" placeholder="Ex : toto" maxlength="5" required /></p>
         <p><label for="mail"> Email :</label>
-        <input type="mail" name="mail" id="mail"/></p>
+        <input type="email" name="mail" id="mail"/></p>
         <label for = "commentaire"> Comment puis-je améliorer le site?</label>
         <p><textarea type="text" name="commentaire" id="commentaire" >
         </textarea></p>
@@ -458,10 +460,10 @@
       <p>Réalisation sous logiciel Notepad++ </p>
       <!--retour vers le haut-->
       <p><a href="#top">Retourner en haut</a></p>
-      </div>
       </footer>
       </div>
+      </div>
     </div>
+   </div>
   </body>
-  </div>
 </html>

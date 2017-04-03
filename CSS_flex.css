@@ -23,11 +23,12 @@
   flex-flow: row nowrap;
   font-weight: bold;
   text-align: center;
+  align-items: center;
 }
 .tri{
-	max-width: 12.5%;
- width: 10%;
- height:100%;
+  max-width: 12.5%;
+  width: 10%;
+  height:100%;
  
 }
 .image{
@@ -40,6 +41,7 @@
   font-family: Jokerman;
   width: 80%;
   align-self:center;
+  font-size: 3em;
 }
 
 .corpsprincipal{
@@ -161,12 +163,12 @@
 
 .choixàcocher{
   background-color:gray;
-  width:50%;  
+  width:100%; 
 }
 
 .choixpuces{
   background-color:gray;
-  width:50%; 
+  width:100%; 
 }
 
 
